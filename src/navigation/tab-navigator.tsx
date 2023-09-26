@@ -1,5 +1,5 @@
 import React from 'react'
-import { Icon } from "@gluestack-ui/themed";
+import { Button, Icon, Text, View } from "@gluestack-ui/themed";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
@@ -7,7 +7,7 @@ import HomeIcon from "../components/atoms/icon/home";
 import TasksIcon from '../components/atoms/icon/tasks';
 import addNewIcon from '../components/atoms/icon/add-new';
 import ProjectsIcon from '../components/atoms/icon/projects';
-import SettingsIcon from '../components/atoms/icon/settings';
+import SettingsIcon from "../components/atoms/icon/settings";
 
 import Home from "../components/screens/Test";
 import Test from "../components/screens/Test";
@@ -15,6 +15,8 @@ import Profile from "../components/screens/Profile";
 import Projects from "../components/screens/Projects";
 import Tasks from "../components/screens/Tasks";
 import Settings from "../components/screens/Settings";
+
+import Header from '../components/organisms/header/Header';
 
 const Tab = createBottomTabNavigator();
 
@@ -45,6 +47,10 @@ export default function TabNavigator() {
           headerTitle: () => {
             return null;
           },
+          header: () => {
+            return <Header />;
+          },
+          headerTransparent: true,
         })}
       >
         <Tab.Screen name="Home" component={Home} />

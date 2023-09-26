@@ -1,2 +1,2 @@
-export * from "./organisms/navbar/navbar";
+export * from "./organisms/header/Header";
 export * from "./atoms/icon/index";
