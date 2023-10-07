@@ -15,16 +15,31 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "bundleIdentifier": "com.boringtodo.app"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./src/assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "googleServicesFile": "./google-services.json",
+      "package": "com.boringtodo.app"
     },
     "web": {
       "favicon": "./src/assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "@react-native-firebase/app",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ]
+    ]
   }
 }
