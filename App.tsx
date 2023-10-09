@@ -1,5 +1,5 @@
 import { GluestackUIProvider } from "@gluestack-ui/themed";
-import TabNavigator from "./src/navigation/tab-navigator";
+import { TabNavigator } from "@nagivation";
 
 
 export default function App() {
