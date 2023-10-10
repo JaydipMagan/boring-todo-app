@@ -5,7 +5,7 @@ import UserIcon from '../../atoms/icon/user';
 import SearchBar from '../../molecules/search-bar/SearchBar';
 export default function Header() {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ backgroundColor: "#F3F7FF" }}>
       <HStack
         justifyContent="space-between"
         alignItems="center"
@@ -15,18 +15,6 @@ export default function Header() {
         margin={10}
       >
         <SearchBar />
-        <Box>
-          <Button
-            borderRadius="$full"
-            size="lg"
-            height={46}
-            width={46}
-            bg="#5942F4"
-            borderColor="#5942F4"
-          >
-            <ButtonIcon as={UserIcon} />
-          </Button>
-        </Box>
       </HStack>
     </SafeAreaView>
   );

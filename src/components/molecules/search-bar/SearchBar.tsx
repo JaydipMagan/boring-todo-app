@@ -4,11 +4,7 @@ import SearchIcon from '../../atoms/icon/search';
 
 export default function SearchBar() {
   return (
-    <Input
-      size="lg"
-      width={"$72"}
-      borderRadius={16}
-    >
+    <Input size="lg" width={"$full"} borderRadius={16}>
       <InputSlot pl="$3">
         <InputIcon as={SearchIcon} />
       </InputSlot>

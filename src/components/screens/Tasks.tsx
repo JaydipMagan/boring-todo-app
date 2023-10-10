@@ -1,21 +1,10 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, View } from "react-native";
+import { Screen } from "../templates";
 import { Text } from "@gluestack-ui/themed";
 
 export default function Tasks() {
   return (
-      <View style={styles.container}>
-        <Text>This is the tasks page</Text>
-        <StatusBar style="auto" />
-      </View>
+    <Screen>
+      <Text>This is the tasks page</Text>
+    </Screen>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});

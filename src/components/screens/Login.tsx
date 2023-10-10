@@ -1,10 +1,10 @@
 import { Screen } from "../templates";
 import { Text } from "@gluestack-ui/themed";
 
-export default function Projects() {
+export default function Login() {
   return (
     <Screen>
-      <Text>This is the projects page</Text>
+      <Text>This is the login page</Text>
     </Screen>
   );
 }

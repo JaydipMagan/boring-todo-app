@@ -1,10 +1,10 @@
 import { Screen } from "../templates";
 import { Text } from "@gluestack-ui/themed";
 
-export default function Projects() {
+export default function AddNew() {
   return (
     <Screen>
-      <Text>This is the projects page</Text>
+      <Text>This is the add new page</Text>
     </Screen>
   );
 }
