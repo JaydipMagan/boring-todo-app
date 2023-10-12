@@ -1,14 +1,14 @@
 import React from 'react'
-import { View, Input, InputField, InputIcon, InputSlot } from '@gluestack-ui/themed';
-import SearchIcon from '../../atoms/icon/search';
+import { Input, InputField, InputIcon, InputSlot } from "@gluestack-ui/themed";
+import SearchIcon from "../../atoms/icon/search";
 
 export default function SearchBar() {
   return (
-    <Input size="lg" width={"$full"} borderRadius={16}>
+    <Input size="lg" width={"$full"} borderRadius={16} height={"$3"}>
       <InputSlot pl="$3">
         <InputIcon as={SearchIcon} />
       </InputSlot>
-      <InputField placeholder="" />
+      <InputField placeholder="hello" />
     </Input>
   );
 }
