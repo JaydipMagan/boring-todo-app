@@ -204,3 +204,4 @@ yarn-error.*
 *.tsbuildinfo
 
 # @end expo-cli
+src/config/boring-todo-app-serivce-account.json
