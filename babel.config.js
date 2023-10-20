@@ -12,6 +12,8 @@ module.exports = function (api) {
           alias: {
             "@components": "./src/components/index.ts",
             "@navigation": "./src/navigation/index.ts",
+            "@screens": "./src/screens/index.ts",
+            "@api": "./src/api/index.ts",
           },
         },
       ],
