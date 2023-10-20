@@ -1,4 +1,4 @@
-import { Screen } from "../templates";
+import { Screen } from "../components/templates";
 import { Text } from "@gluestack-ui/themed";
 
 export default function Profile() {

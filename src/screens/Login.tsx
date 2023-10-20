@@ -1,8 +1,9 @@
-import { Screen } from "../templates";
-import { View, Button } from "@gluestack-ui/themed";
+import { Screen } from "../components/templates";
+import { View } from "@gluestack-ui/themed";
 import { useState } from "react";
 import { useForm, Controller } from "react-hook-form";
-import TextInputField from "../atoms/input-field/input-field";
+import { TextInputField, Button } from "@components";
+import { Text } from "@rneui/themed";
 
 type ILoginFormData = {
   email: string;
@@ -25,7 +26,7 @@ export default function Login() {
 
   return (
     <Screen>
-      <View>
+      <View width={"80%"}>
         <Controller
           control={control}
           rules={{
@@ -37,7 +38,6 @@ export default function Login() {
               onBlur={onBlur}
               onChangeText={onChange}
               value={value}
-              style={{ width: 100 }}
               placeholder="Email"
             />
           )}
@@ -61,7 +61,9 @@ export default function Login() {
           name="password"
         />
 
-        <Button onPress={handleSubmit(onSubmit)} />
+        <Button onPress={handleSubmit(onSubmit)}>
+          <Text>Register</Text>
+        </Button>
       </View>
     </Screen>
   );
