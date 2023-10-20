@@ -2,7 +2,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import TabNavigator from "./tab-navigator";
 import { useAuthContext, useAuthDispatchContext } from "../context/auth";
-import { Login } from "../components/screens";
+import { Login, Register } from "../screens";
 
 const Stack = createNativeStackNavigator();
 
@@ -20,7 +20,7 @@ const Navigation = () => {
         {authState.userToken != null ? (
           <Stack.Screen name="Authenticated" component={TabNavigator} />
         ) : (
-          <Stack.Screen name="Login" component={Login} />
+          <Stack.Screen name="Register" component={Register} />
         )}
       </Stack.Navigator>
     </NavigationContainer>

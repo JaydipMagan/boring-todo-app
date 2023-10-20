@@ -4,17 +4,18 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import {
   Header,
-  Home,
-  Tasks,
-  Projects,
-  Profile,
-  AddNew,
   IconHome,
   IconAddNew,
   IconTasks,
   IconProjects,
   IconUser,
 } from "@components";
+
+import Home from "../screens/Home";
+import Tasks from "../screens/Tasks";
+import AddNew from "../screens/AddNew";
+import Projects from "../screens/Projects";
+import Profile from "../screens/Profile";
 
 const Tab = createBottomTabNavigator();
 
